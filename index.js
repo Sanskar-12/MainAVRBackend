@@ -25,7 +25,7 @@ app.use(
   })
 );
 
-app.get("/api/:month", (req, res) => {
+app.get("/api/v1/:month", (req, res) => {
   const month = req.params.month;
   if (month === "May-June")
     res.json({
